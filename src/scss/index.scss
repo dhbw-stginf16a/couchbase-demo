@@ -1,0 +1,46 @@
+@import '~grommet/scss/hpe/index';
+
+// Prints the label of a FormField bold
+.grommetux-form-field__label {
+    font-weight: bold;
+}
+
+// Changed Pulse Icon color to HPE Green
+.grommetux-pulse__icon svg {
+    background-color: #01a982;
+}
+
+// Fixed header of DateTime component to be under the main header and therefore
+// unresponsive to any user action
+.grommet.grommetux-drop {
+    z-index: 101;
+}
+
+// Fixes scrolling behavior with Tabs
+// now uses flexboxes
+.grommetux-tabs {
+    flex: 0 0 auto;
+}
+
+div[role=tablist], 
+div[role=tabpanel] {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.grommetux-table--small thead {
+    display: table-header-group;
+}
+
+// Fix display of images
+.grommetux-image__container {
+    flex: 0 0 auto;
+}
+
+// Adjust width of input when screen is big enough
+@media screen and (min-width: 1280px) {
+    .grommet-formfield-wide {
+        width: 275px;
+    }
+}

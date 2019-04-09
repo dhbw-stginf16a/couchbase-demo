@@ -1,0 +1,7 @@
+# Ignore Folder
+server/node_modules
+server/logs
+
+node_modules
+.vscode
+logs
