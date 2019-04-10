@@ -5,6 +5,7 @@ console.log('Couchbase-Demo Server started');
 const port = 1234;
 
 // load external dependencies
+const dotenv = require('dotenv').config();
 const app = require('express')(); // web framework for nodejs
 const server = require('http').Server(app); // used to start a webserver listening for http requests
 const bodyParser = require('body-parser'); // express middleware to parse body object of REST requests
